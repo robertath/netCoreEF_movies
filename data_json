@@ -1,0 +1,60 @@
+DB password: H*ffm@nn85
+
+
+#POST 
+http://localhost:5000/endereco
+{
+    "Logradouro": "Rua Centrao, 1",
+    "Bairro": "Centro",
+    "Numero": "100"
+}
+
+#GET
+http://localhost:5000/endereco/1
+
+
+#POST 
+http://localhost:5000/gerente
+{
+    "Nome": "Chatonildo Boss"
+}
+
+#GET
+http://localhost:5000/gerente/1
+
+
+http://localhost:5000/filme
+{
+    "Titulo": "Tintanic",
+    "Duracao": 120,
+    "Diretor": "Steven Spielberg",
+    "Genero": "Drama",
+    "ClassificacaoEtaria": "10"
+}
+
+#GET
+http://localhost:5000/cinema/1
+
+
+
+http://localhost:5000/cinema
+{
+    "Nome": "CineMax 1",
+    "EnderecoId": 1,
+    "GerenteId": 1
+}
+
+#GET
+http://localhost:5000/cinema/1
+
+#POST 
+http://localhost:5000/sessao
+{
+    "FilmeId": 1,
+    "CinemaId": 1,
+    "HorarioDeEncerramento": "2022-09-10T18:00:00Z"
+}
+
+#GET
+http://localhost:5000/gerente/1
+
