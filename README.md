@@ -17,8 +17,8 @@
 * Swashbuckle.AspNetCore" Version="5.6.3"
 
 ###### To run application use:
-MySql > create database cinemaDb
-Postman 
+* MySql > create database cinemaDb
+* Postman 
 
 ###### If EF migrations don't exist, create:
 ```
@@ -48,21 +48,21 @@ update-database
 Documentation Authentication - Identy configs
 https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?view=aspnetcore-5.0
 
-To run application use:
-MySql > create database usuariodb
-Postman 
+###### To run application use:
+* MySql > create database usuariodb
+* Postman 
 
-# If EF migrations don't exist, create:
+######  If EF migrations don't exist, create:
 ```
 add-migration "Criando UsuarioApi"
 ```
 
-# Set migration on database
+######  Set migration on database
 ```
 update-database
 ```
 
-# Setup User Secrets
+######  Setup User Secrets
 ```
 dotnet user-secrets init
 dotnet user-secrets set "EmailSettings:From" "maildevtoolstest@gmail.com"
