@@ -58,3 +58,36 @@ http://localhost:5000/sessao
 #GET
 http://localhost:5000/gerente/1
 
+
+#POST
+http://localhost:6000/cadastro
+{
+    "Username": "teste3",
+    "Email": "maildevtoolstest@gmail.com",
+    "Password": "Senha123!",
+    "RePassword": "Senha123!",
+    "DataNascimento": "2005-01-01T00:00:00"
+}
+
+
+#POST
+http://localhost:6000/login
+{
+    "Username": "roberta",
+    "Password": "Senha123!"
+}
+
+#POST
+http://localhost:6000/solicita-reset
+{
+    "Email": "maildevtoolstest@gmail.com"
+}
+
+#POST
+http://localhost:6000/efetua-reset
+{
+    "Email": "robertath@gmail.com",
+    "Password": "Senha123!",
+    "RePassword": "Senha123!"
+    "Token": ""
+}
